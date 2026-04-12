@@ -1,222 +1,47 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <link rel="stylesheet" href="session.css" />
   </head>
   <body>
-    <header>
-      <div class="logo">
-        <img
-          src="https://agenciapnz.com/wp-content/uploads/Logo-Netflix-1024x430.png"
-          alt=""
-        />
-      </div>
+    <div id="profile-screen" class="profile-container">
+      <h1>Quem está assistindo?</h1>
 
-      <div class="menu">
-        <ul>
-          <li>Início</li>
-          <li>Série</li>
-          <li>Filmes</li>
-          <li>Jogos</li>
-          <li>Bombando</li>
-          <li>Minha Lista</li>
-          <li>Melhores da Alura</li>
-        </ul>
-      </div>
+      <div class="profiles-list">
+        <div class="profile-card" onclick="selectProfile('Gabriel')">
+          <div class="avatar-wrapper">
+            <img
+              src="https://mir-s3-cdn-cf.behance.net/project_modules/disp/1bdc9a33850498.56ba69ac2ba5b.png"
+              alt="Gabriel"
+            />
+          </div>
+          <span>Gabriel</span>
+        </div>
 
-      <div class="menu-lateral-container">
-        <div class="barra-pesquisa"><i class="bx bx-search"></i></div>
+        <div class="profile-card" onclick="selectProfile('Infantil')">
+          <div class="avatar-wrapper">
+            <img
+              src="https://i.pinimg.com/736x/ec/74/7a/ec747a688a5d6232663caaf114bad1c3.jpg"
+              alt="Kids"
+            />
+          </div>
+          <span>Infantil</span>
+        </div>
 
-        <div class="name" id="name"><p>Gabriel</p></div>
-
-        <div class="notificacao"><i class="bx bxs-bell"></i></div>
-
-        <div class="icone-user">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
-            alt=""
-          />
+        <div class="profile-card">
+          <div class="avatar-wrapper add-profile">
+            <i class="bx bx-plus-circle"></i>
+          </div>
+          <span>Adicionar Perfil</span>
         </div>
       </div>
 
-      <div class="menu-responsivo">
-        <div class="icone-responsivo">
-          <i class="bx bx-menu"></i>
-        </div>
-      </div>
-    </header>
+      <button class="manage-profiles">Gerenciar perfis</button>
+    </div>
 
-    <main>
-      <div class="container">
-        <div class="titulo">
-          <h2>Épicos</h2>
-        </div>
-
-        <div class="seta">
-          <div class="esquerda"><i class="bx bxs-chevron-left"></i></div>
-          <div class="direita"><i class="bx bxs-chevron-right"></i></div>
-        </div>
-
-        <div class="boxes">
-          <div class="exibicao">
-            <img
-              src="https://img.odcdn.com.br/wp-content/uploads/2025/05/maze-runner-filmes-1920x1080.jpg"
-              alt=""
-            />
-
-            <div class="box-hover"></div>
-          </div>
-
-          <div class="exibicao">
-            <img
-              src="https://disney.images.edge.bamgrid.com/ripcut-delivery/v2/variant/disney/af675c20-3a80-41ac-abcb-b669c3c44f63/compose?aspectRatio=1.78&format=webp&width=1200"
-              alt=""
-            />
-            <div class="box-hover"></div>
-          </div>
-
-          <div class="exibicao">
-            <img
-              src="https://i.ytimg.com/vi/XSHjP9L0tWk/maxresdefault.jpg"
-              alt=""
-            />
-            <div class="box-hover"></div>
-          </div>
-
-          <div class="exibicao">
-            <img
-              src="https://m.media-amazon.com/images/S/pv-target-images/dbd1c11119609081e7591e2b84380db0dfb2965503326d01acaa516fc80c0617._SX1080_FMjpg_.jpg"
-              alt=""
-            />
-            <div class="box-hover"></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="segundo-container">
-        <div class="titulo">
-          <h2>Séries Mais Assistidas</h2>
-        </div>
-
-        <div class="seta">
-          <div class="esquerda"><i class="bx bxs-chevron-left"></i></div>
-          <div class="direita"><i class="bx bxs-chevron-right"></i></div>
-        </div>
-
-        <div class="boxes">
-          <div class="exibicao">
-            <img
-              src="https://m.media-amazon.com/images/S/pv-target-images/da965f3ac7162bf10c0f8d99c7b33846fe7ca055e71ed0286732ecea974be565.jpg"
-              alt=""
-            />
-          </div>
-
-          <div class="exibicao">
-            <img
-              src="https://uploads.jovemnerd.com.br/wp-content/uploads/2024/07/the_boys_quarta_temporada_critica__l8nj292.jpg"
-              alt=""
-            />
-          </div>
-
-          <div class="exibicao">
-            <img
-              src="https://miro.medium.com/v2/resize:fit:1400/1*ELn2VylIgfDTb396AVS2FA.jpeg"
-              alt=""
-            />
-          </div>
-
-          <div class="exibicao">
-            <img
-              src="https://img.odcdn.com.br/wp-content/uploads/2024/08/Game-of-Thrones-1920x1080.jpg"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-
-      <div class="terceiro-container">
-        <div class="titulo">
-          <h2>Épicos</h2>
-        </div>
-
-        <div class="seta">
-          <div class="esquerda"><i class="bx bxs-chevron-left"></i></div>
-          <div class="direita"><i class="bx bxs-chevron-right"></i></div>
-        </div>
-
-        <div class="boxes">
-          <div class="exibicao">
-            <img
-              src="https://m.media-amazon.com/images/S/pv-target-images/da965f3ac7162bf10c0f8d99c7b33846fe7ca055e71ed0286732ecea974be565.jpg"
-              alt=""
-            />
-          </div>
-
-          <div class="exibicao">
-            <img
-              src="https://uploads.jovemnerd.com.br/wp-content/uploads/2024/07/the_boys_quarta_temporada_critica__l8nj292.jpg"
-              alt=""
-            />
-          </div>
-
-          <div class="exibicao">
-            <img
-              src="https://miro.medium.com/v2/resize:fit:1400/1*ELn2VylIgfDTb396AVS2FA.jpeg"
-              alt=""
-            />
-          </div>
-
-          <div class="exibicao">
-            <img
-              src="https://img.odcdn.com.br/wp-content/uploads/2024/08/Game-of-Thrones-1920x1080.jpg"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-    </main>
-
-    <footer class="footer-netflix">
-      <div class="footer-container">
-        <p class="footer-contact">Dúvidas? Ligue 0800-123-4567</p>
-
-        <div class="footer-links">
-          <ul class="footer-column">
-            <li><a href="#">Perguntas frequentes</a></li>
-            <li><a href="#">Relações com investidores</a></li>
-            <li><a href="#">Formas de assistir</a></li>
-            <li><a href="#">Informações corporativas</a></li>
-          </ul>
-          <ul class="footer-column">
-            <li><a href="#">Centro de ajuda</a></li>
-            <li><a href="#">Carreiras</a></li>
-            <li><a href="#">Termos de uso</a></li>
-            <li><a href="#">Entre em contato</a></li>
-          </ul>
-          <ul class="footer-column">
-            <li><a href="#">Conta</a></li>
-            <li><a href="#">Resgatar cartão pré-pago</a></li>
-            <li><a href="#">Privacidade</a></li>
-            <li><a href="#">Teste de velocidade</a></li>
-          </ul>
-        </div>
-
-        <hr />
-
-        <div class="footer-disclaimer">
-          <p>Netflix Brasil</p>
-          <p class="educational-tag">
-            Este é um projeto com <strong>fins educacionais</strong>.
-          </p>
-        </div>
-      </div>
-    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
